@@ -7,7 +7,7 @@
 
 ```
 # Clone this repository
-git clone https://github.com/electron/electron-quick-start
+git clone https://github.com/leedalei/musicDecoder.git
 # Go into the repository
 cd musicDecoder
 # Install dependencies

@@ -1,0 +1,117 @@
+.title{
+  text-align: center;
+  font-size: 22px;
+  margin: 20px 0;
+  color: #2875e8;
+}
+
+.info{
+  font-size: 12px;
+  color: #666;
+  margin: 10px 0;
+  padding-left: 10px;
+}
+
+.main-box{
+  padding:10px;
+  border: 1px solid #c9c9c9;
+}
+.box-tip{
+  font-size: 12px;
+  color: #999;
+}
+
+.convert-box{
+  width: 400px;
+  margin: 15px auto;
+  display: flex;
+  justify-content: space-between;
+}
+.convert,.cancel,.clear,.check{
+  outline: none;
+  border: 0;
+  color: #fff;
+  border-radius: 3px;
+  padding: 8px 12px;
+  box-shadow: 0 5px 8px 0 #d9d9d9;
+  transition: all ease .3s;
+  cursor: pointer;
+}
+.convert{
+  background-color: #2875e8;
+}
+.convert:hover{
+  background-color: #2260bd;
+}
+.cancel{
+  background-color: #e84528;
+}
+.cancel:hover{
+  background-color:#c53a21;
+}
+.clear{
+  background-color: #e8a528;
+}
+.clear:hover{
+  background-color:#b88320;
+}
+.check{
+  background-color: #8a8a8a;
+}
+.check:hover{
+  background-color:#4d4c4c;
+}
+
+.todolist{
+  border: 1px solid #c9c9c9;
+  padding: 10px
+}
+.todolist-head{
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+}
+.progress-bar{
+  width: 200px;
+  height: 20px;
+  margin-left: 10px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px 0 #c9c9c9 inset;
+  overflow: hidden;
+}
+.progress-already{
+  margin: 0;
+  width: 0;
+  height: 100%;
+  border-radius: 20px;
+  background:linear-gradient(to bottom, #76a3e3,#2875e8,#76a3e3) ;
+  
+}
+.filelist{
+  height: 200px;
+  overflow: auto;
+  padding-left: 10px;
+  color: #999;
+  font-size: 13px;
+}
+.filelist-item{
+  position: relative;
+  height: 24px;
+  line-height: 24px;
+  white-space: nowrap;
+}
+
+.filelist-item:first-child{
+  color: #2875e8;
+}
+.filelist-item:first-child::before{
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: -12px;
+  top: 50%;
+  margin-top: -6px;
+  border: 6px solid transparent;
+  border-left: 6px solid #2875e8;
+}

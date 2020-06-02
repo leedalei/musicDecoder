@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+  <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>网易云音乐转码器</title>
+</head>
+
+<body>
+  <h1 class="title">网易云音乐转码器</h1>
+  <div class="info">
+    使用说明:
+    <p>1.先打开网易云音乐--设置--下载设置--查看缓存目录</p>
+    <p>2.然后使用下面的文件选择器打开缓存目录选择目录即可，如果是要单选文件，注意选择结尾为.uc的缓存文件</p>
+    <p>3.文件默认输出位置和输入文件同样位置</p>
+  </div>
+  <div class="main-box">
+    <div>
+      <input id="file-selector" multiple="multiple" size="200" type="file" />
+      <div>
+        <label for="file-selector" class="box-tip">注意: 这个是单文件选择器，支持多选;默认过滤非.uc结尾的文件;适用于精致用户</label>
+      </div>
+    </div>
+    <hr/>
+    <div>
+      <input type="file" id="file-selector2" webkitdirectory directory />
+      <div>
+        <label for="file-selector2" class="box-tip">注意: 这个是文件夹选择器，适用于一把梭的用户</label>
+      </div>
+    </div>
+  </div>
+  <div class="convert-box">
+    <button class="convert">开始转换</button>
+    <button class="cancel">中止转换</button>
+    <button class="clear">清空列表</button>
+    <button class="check">查看输出文件夹</button>
+  </div>
+  <div class="todolist">
+    <div class="todolist-head">
+      <p>等待转换列表:</p>
+      <div class="progress-bar">
+        <p class="progress-already"></p>
+      </div>
+    </div>
+    <ul class="filelist">
+    </ul>
+  </div>
+  <!-- You can also require other files to run in this process -->
+  <script src="./js/index.js"></script>
+</body>
+
+</html>

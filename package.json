@@ -33,7 +33,7 @@
   "author": "leelei",
   "license": "CC0-1.0",
   "devDependencies": {
-    "electron": "^9.0.0",
+    "electron": "^11.5.0",
     "electron-builder": "^22.7.0"
   },
   "dependencies": {
